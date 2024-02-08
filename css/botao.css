@@ -1,0 +1,10 @@
+.botaoAzul{
+    height: 70px;
+    width: 300px;
+    background-color: #4BA2C1;
+    border-radius: 50px;
+    border: none;
+    font-family: 'inspiration', cursive;
+    font-size: 40px;
+    color: #ffff;
+}
