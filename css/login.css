@@ -1,0 +1,7 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inspiration', cursive;
+    height: 100vh;
+    padding: 32px 24px;
+}
