@@ -1,0 +1,70 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inspiration', cursive;
+    align-items: center;
+    height: 100vh;
+    padding: 32px 24px;
+    background: rgb(190,242,249);
+    background: linear-gradient(180deg, rgba(190,242,249,1) 0%, rgba(6,113,159,1) 100%);
+}
+
+.titulo{
+    font-size: 110px;
+    text-align: center;
+    color: #ffff;
+
+}
+.titulo>h2{
+    font-weight: lighter;
+}
+
+.cadastroInfo{
+    height: 500px;
+    width: 400px;
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50px;
+    gap: 30px;
+}
+
+input{
+    height: 50px;
+    width: 300px;
+    gap: 50px;
+    font-size: 16px;
+    line-height: 18.75px;
+    padding-left: 32px;
+    color: gray;
+    background-color: transparent;
+    border-bottom: solid gray 2px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+
+}
+
+#email{
+    background-image: url(../img/image\ 1.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 28px;
+}
+
+#senha{
+    background-image: url(../img/image\ 2.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 29px;
+}
+ 
+#nome{
+    background-image: url(../img/image\ 4.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 29px;
+}
