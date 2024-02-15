@@ -7,7 +7,9 @@ body{
     background: rgb(190,242,249);
     background: linear-gradient(180deg, rgba(190,242,249,1) 0%, rgba(6,113,159,1) 100%);
 }
-
+.inicio{
+    width: 55px;
+}
 .titulo{
     font-size: 100px;
     text-align: center;
@@ -20,17 +22,34 @@ body{
 
 .perfil{
     display: flex;
-    background-image: url(../img/image\ 4.png);
-    background-repeat: no-repeat;
-    width: 55px;
-    height: 55px;
-    background-size: 55px;
+    flex-direction: column;
+    width: 40px;
+    height: 40px;
+    background-size: 55px; 
 }
 
 
 .perfil>h6{
-    font-size: 30px;
-    text-align: end;
+    font-size: 20px;
+    font-family: "Italiana", sans-serif;
 }
 
+.tarefas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    flex-direction: column;
+}
 
+.tarefas>h3{
+    font-weight: lighter;
+    font-size: 60px;
+}
+
+.listarTarefas{
+    width: 400px;
+    height: 500px;
+    background-color: #ffff;
+    border-radius: 50px;
+}
