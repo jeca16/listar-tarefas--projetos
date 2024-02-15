@@ -10,6 +10,8 @@ async function validarLogin() {
         const users = await fetch('http://localhost:5080/usuario')
         const listUsers = await users.json()
 
+        console.log(listUsers)
+
         listUsers.forEach((user) => {
             if (email === user.email && senha === user.senha) {
                 alert('Usuario logado com sucesso !!!')

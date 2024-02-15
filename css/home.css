@@ -6,12 +6,14 @@ body{
     padding: 32px 24px;
     background: rgb(190,242,249);
     background: linear-gradient(180deg, rgba(190,242,249,1) 0%, rgba(6,113,159,1) 100%);
+    overflow-y: hidden;
+
 }
 .inicio{
-    width: 55px;
+    width: 40px;
 }
 .titulo{
-    font-size: 100px;
+    font-size: 90px;
     text-align: center;
     color: #ffff;
 
@@ -34,12 +36,20 @@ body{
     font-family: "Italiana", sans-serif;
 }
 
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
 .tarefas{
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ffff;
     flex-direction: column;
+    width: 500px ;
 }
 
 .tarefas>h3{
@@ -49,7 +59,44 @@ body{
 
 .listarTarefas{
     width: 400px;
-    height: 500px;
+    height: 590px;
     background-color: #ffff;
     border-radius: 50px;
 }
+
+.novaTarefa{
+    width: 70px;
+}
+
+.criar{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 70px;
+
+}
+
+.criar>h3{
+    font-size: 20px;
+    font-family:  "Italiana", sans-serif ;
+}
+
+.tarefasConcluidas{
+    width: 70px;
+}
+
+
+.mostrarFeitas{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 70px;
+
+}
+
+.mostrarFeitas>h3{
+    font-size: 20px;
+    font-family:  "Italiana", sans-serif ;
+}
+
+
