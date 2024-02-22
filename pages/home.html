@@ -35,17 +35,48 @@
             <h2> Bem vindo Joao</h2>
         </div>
     </header>
-    
+
     <main>
 
-        <div class="novaTarefa">
-            <a href="./criarTarefa.html" target="_blank">
-                <div class="criar">
-                    <img src="../img/image 11.png" alt="">
-                    <h3> Nova Tarefa</h3>
-                </div>
-            </a>
+        <div class="tarefa">
+            <button class="botao" id="botaoTarefa"><img src="../img/image 11.png" alt="">
+                <p>nova Tarefa</p>
+            </button>
+            <div class="novaTarefa" style="visibility: hidden;" id="novaTarefa">
+                <img src="../img/fechar.png" class="botaoFechar" id="botaoFechar">
+                <input type="text" placeholder="Título da Tarefa" id="tituloNovaTarefa">
+                <textarea placeholder="Descrição da Tarefa" id="descricaoDaTarefa" class="descricao"></textarea>
+                <input type="date" id="dataTarefa">
+                <fieldset id="categoriaTarefa">
+                    <p> Selecione a categoria:</p>
+                    <div>
+                        <div>
+                            <input type="radio" id="escolhaPessoal" value=1 name="escolha">
+                            <label for="escolhaPessoal"> Pessoal </label>
+                        </div>
+                        <div>
+                            <input type="radio" id="escolhaTrabalho" value=2 name="escolha">
+                            <label for="escolhaTrabalho"> Trabalho </label>
+                        </div>
+                        <div>
+                            <input type="radio" id="escolhaCasa" value=3 name="escolha">
+                            <label for="escolhaCasa"> Casa </label>
+                        </div>
+                        <div>
+                            <input type="radio" id="escolhaSaude" value=4 name="escolha">
+                            <label for="escolhaSaude"> Saúde </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <button onclick="cadastroTarefa()"> Criar </button>
+            </div>
         </div>
+
+
+
+
+
+
 
 
         <div class="tarefas">
@@ -64,13 +95,6 @@
         </div>
 
     </main>
-
-
-
-        
-
-        <div class="concluidas"></div>
-
 </body>
 
 </html>

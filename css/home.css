@@ -6,7 +6,7 @@ body{
     padding: 32px 24px;
     background: rgb(190,242,249);
     background: linear-gradient(180deg, rgba(190,242,249,1) 0%, rgba(6,113,159,1) 100%);
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 
 }
 .inicio{
@@ -40,7 +40,6 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 600px;
 }
 
 .tarefas{
@@ -86,7 +85,7 @@ main{
 .tarefasConcluidas{
     width: 70px;
     display: flex;
-    margin-top: 420px;
+    margin-top: 440px;
 }
 
 

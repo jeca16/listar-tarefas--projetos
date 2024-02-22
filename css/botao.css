@@ -8,3 +8,11 @@
     font-size: 40px;
     color: #ffff;
 }
+
+.botao{
+    background: none;
+    border: none;
+    font-family: "Italiana", sans-serif;
+    font-size: 20px;
+    font-weight:bold;
+}
