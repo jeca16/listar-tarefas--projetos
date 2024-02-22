@@ -61,6 +61,13 @@ input{
     background-position: left;
     background-size: 29px;
 }
+
+#confirmarSenha{
+    background-image: url(../img/image\ 2.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 29px;
+}
  
 #nome{
     background-image: url(../img/image\ 4.png);

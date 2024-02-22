@@ -40,7 +40,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    column-gap: 600px;
 }
 
 .tarefas{
@@ -66,6 +66,8 @@ main{
 
 .novaTarefa{
     width: 70px;
+    display: flex;
+    margin-top: 480px;
 }
 
 .criar{
@@ -83,6 +85,8 @@ main{
 
 .tarefasConcluidas{
     width: 70px;
+    display: flex;
+    margin-top: 420px;
 }
 
 
