@@ -7,6 +7,14 @@ if (!idPerfil) {
 }
 
 const NovaTarefa = document.getElementById('novaTarefa')
+const editarTarefa = document.getElementById('editarTarefa')
+// const sair = document. getElementById (sairButton)
+const filtroButton = document.getElementById('filtroButton')
+const fecharNovaTarefa = document.getElementById('botaoFecharNovaTarefa')
+const fecharedicao = document.getElementById('botaoFecharEdicao')
+const message = document.getElementById('menssage')
+const listarTarefas = document. getElementById('tarefa')
+
 
 filtroButton.addEventListener('click',filtrar) 
 function filtrar(){
@@ -62,3 +70,4 @@ async function cadastroTarefa(){
         }
     }
 }
+

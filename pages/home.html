@@ -37,51 +37,71 @@
     </header>
 
     <main>
-
-        <div class="tarefa">
-            <button class="botao" id="botaoTarefa"><img src="../img/image 11.png" alt="">
-                <p>nova Tarefa</p>
-            </button>
-            <div class="novaTarefa" style="visibility: hidden;" id="novaTarefa">
-                <img src="../img/fechar.png" class="botaoFechar" id="botaoFechar">
-                <input type="text" placeholder="Título da Tarefa" id="tituloNovaTarefa">
-                <textarea placeholder="Descrição da Tarefa" id="descricaoDaTarefa" class="descricao"></textarea>
-                <input type="date" id="dataTarefa">
-                <fieldset id="categoriaTarefa">
-                    <p> Selecione a categoria:</p>
+        <div class="novaTarefa" style="visibility: hidden;" id="novaTarefa">
+            <img src="../img/fechar.png" class="botaoFechar" id="botaoFecharNovaTarefa">
+            <input type="text" placeholder="Título da Tarefa" id="tituloNovaTarefa">
+            <textarea placeholder="Descrição da Tarefa" id="descricaoDaTarefa" class="descricao"></textarea>
+            <input type="date" id="dataTarefa">
+            <fieldset id="categoriaTarefa">
+                <p> Selecione a categoria:</p>
+                <div>
                     <div>
-                        <div>
-                            <input type="radio" id="escolhaPessoal" value=1 name="escolha">
-                            <label for="escolhaPessoal"> Pessoal </label>
-                        </div>
-                        <div>
-                            <input type="radio" id="escolhaTrabalho" value=2 name="escolha">
-                            <label for="escolhaTrabalho"> Trabalho </label>
-                        </div>
-                        <div>
-                            <input type="radio" id="escolhaCasa" value=3 name="escolha">
-                            <label for="escolhaCasa"> Casa </label>
-                        </div>
-                        <div>
-                            <input type="radio" id="escolhaSaude" value=4 name="escolha">
-                            <label for="escolhaSaude"> Saúde </label>
-                        </div>
+                        <input type="radio" id="escolhaPessoal" value=1 name="escolha">
+                        <label for="escolhaPessoal"> Pessoal </label>
                     </div>
-                </fieldset>
-                <button onclick="cadastroTarefa()"> Criar </button>
-            </div>
+                    <div>
+                        <input type="radio" id="escolhaTrabalho" value=2 name="escolha">
+                        <label for="escolhaTrabalho"> Trabalho </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="escolhaCasa" value=3 name="escolha">
+                        <label for="escolhaCasa"> Casa </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="escolhaSaude" value=4 name="escolha">
+                        <label for="escolhaSaude"> Saúde </label>
+                    </div>
+                </div>
+            </fieldset>
+            <button onclick="cadastroTarefa()"> Criar </button>
         </div>
-
-
-
-
-
-
+        <div class="editarTarefa" style="visibility: hidden;" id="editarTarefa">
+            <img src="../img/fechar.png" class="botaoFechar" id="botaoFecharEdicao">
+            <input type="text" placeholder="Título da Tarefa" id="tituloNovaTarefa">
+            <textarea placeholder="Descrição da Tarefa" id="descricaoDaTarefa" class="descricao"></textarea>
+            <input type="date" id="dataTarefa">
+            <fieldset id="categoriaTarefa">
+                <p> Selecione a categoria:</p>
+                <div>
+                    <div>
+                        <input type="radio" id="escolhaPessoal" value=1 name="escolha">
+                        <label for="escolhaPessoal"> Pessoal </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="escolhaTrabalho" value=2 name="escolha">
+                        <label for="escolhaTrabalho"> Trabalho </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="escolhaCasa" value=3 name="escolha">
+                        <label for="escolhaCasa"> Casa </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="escolhaSaude" value=4 name="escolha">
+                        <label for="escolhaSaude"> Saúde </label>
+                    </div>
+                </div>
+            </fieldset>
+            <button id="finalizar"> editar </button>
+        </div>
 
 
         <div class="tarefas">
             <h3>suas tarefas: </h3>
-            <div class="listarTarefas"></div>
+            <div class="listarTarefas">
+                <img src="../img/filtro.png" id="filtroButton">
+                <div class="tatefa" id="tarefa"></div>
+                <div id="menssage">A data limite imposta para essa tarefa já foi ultrapassada</div>
+            </div>
         </div>
 
 

@@ -9,9 +9,24 @@ body{
     /* overflow-y: hidden; */
 
 }
+
+/* header inicio */
 .inicio{
     width: 40px;
 }
+.perfil{
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    height: 40px;
+    background-size: 55px; 
+}
+.perfil>h6{
+    font-size: 20px;
+    font-family: "Italiana", sans-serif;
+}
+
+
 .titulo{
     font-size: 90px;
     text-align: center;
@@ -22,24 +37,53 @@ body{
     font-weight: lighter;
 }
 
-.perfil{
-    display: flex;
-    flex-direction: column;
-    width: 40px;
-    height: 40px;
-    background-size: 55px; 
-}
+/* header final */
 
-
-.perfil>h6{
-    font-size: 20px;
-    font-family: "Italiana", sans-serif;
-}
 
 main{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+}
+
+.novaTarefa, .editarTarefa{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.novaTarefa>input, .editarTarefa>input{
+    height: 10%;
+    width: 40%;
+    border: none;
+    font-size: 300%;
+    padding: 2%;
+    border-radius: 16px;
+}
+
+fieldset, textarea{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(178, 216, 241);
+    border-radius: 50px;
+    height: 30px;
+    width: 20px;
+    font-family:"Italiana", sans-serif;
+    overflow: hidden;
+}
+fieldset>p{
+    font-size: 17px;
+}
+fieldset>div>div{
+    font-size: 17px;
 }
 
 .tarefas{
@@ -61,26 +105,25 @@ main{
     height: 590px;
     background-color: #ffff;
     border-radius: 50px;
-}
-
-.novaTarefa{
-    width: 70px;
     display: flex;
-    margin-top: 480px;
+    flex-direction: row;
+    overflow-x: scroll;
+    margin-bottom: 10px;
+}
+.listarTarefas::-webkit-scrollbar{
+    display: none;
+}
+.listarTarefas img{
+    height: 60px;
+}
+#filtroButton{
+    cursor: pointer;
 }
 
-.criar{
-    display: flex;
-    flex-direction: column;
-    width: 100px;
-    height: 70px;
 
-}
 
-.criar>h3{
-    font-size: 20px;
-    font-family:  "Italiana", sans-serif ;
-}
+
+
 
 .tarefasConcluidas{
     width: 70px;

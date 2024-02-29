@@ -16,3 +16,15 @@
     font-size: 20px;
     font-weight:bold;
 }
+.botaoFechar{
+    height: 100px;
+    position: absolute;
+    top: 4%;
+    left: 7%;
+    background-color: #4BA2C1;
+    border-radius: 100%;
+    padding: 0.3%;
+    cursor: pointer;
+    z-index: 1;
+    
+}
