@@ -11,6 +11,7 @@ body{
 }
 
 /* header inicio */
+
 .inicio{
     width: 40px;
 }
@@ -47,44 +48,57 @@ main{
 }
 
 .novaTarefa, .editarTarefa{
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.7);
+    width: 50vw;
+    height: 70vh;
+    background-color: rgba(44, 43, 43, 0.7);
     position: absolute;
     z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    border-radius: 60px;
+    font-family: "Italiana", sans-serif;
 }
 
 .novaTarefa>input, .editarTarefa>input{
-    height: 10%;
+    height: 50px;
     width: 40%;
     border: none;
-    font-size: 300%;
+    font-size: 30px;
     padding: 2%;
     border-radius: 16px;
+    font-family: "Italiana", sans-serif;
+    font-weight: bolder;
 }
 
-fieldset, textarea{
+textarea{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     background-color: rgb(178, 216, 241);
-    border-radius: 50px;
-    height: 30px;
-    width: 20px;
+    border-radius: 30px;
+    height: 19%;
+    width: 20%;
     font-family:"Italiana", sans-serif;
+    font-size: 30px;
     overflow: hidden;
 }
+
 fieldset>p{
     font-size: 17px;
 }
 fieldset>div>div{
     font-size: 17px;
 }
+
+textarea{
+    width: 40%;
+    height: 30%;
+}
+
+
 
 .tarefas{
     display: flex;
@@ -119,10 +133,6 @@ fieldset>div>div{
 #filtroButton{
     cursor: pointer;
 }
-
-
-
-
 
 
 .tarefasConcluidas{

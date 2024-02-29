@@ -17,7 +17,7 @@
     font-weight:bold;
 }
 .botaoFechar{
-    height: 100px;
+    height: 50px;
     position: absolute;
     top: 4%;
     left: 7%;
@@ -25,6 +25,27 @@
     border-radius: 100%;
     padding: 0.3%;
     cursor: pointer;
-    z-index: 1;
-    
+    z-index: 1;   
+}
+
+.botaoAbrir{
+    background-color: transparent;
+    border: none;
+    font-weight: bolder;
+    font-family: "Italiana", sans-serif;
+    font-size: 20px;
+    color: black;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+}
+
+.botaoCriar{
+    width: 700px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: rgb(129, 201, 248);
+    font-family: 'inspiration', cursive;
+    font-size: 60px;
+    color: white;
 }

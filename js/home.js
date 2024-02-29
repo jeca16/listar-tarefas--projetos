@@ -6,9 +6,9 @@ if (!idPerfil) {
     window.location.href = '../login.html'
 }
 
-const NovaTarefa = document.getElementById('novaTarefa')
+const novaTarefa = document.getElementById('novaTarefa')
+const botaoAbrirNovaTarefa = document.getElementById('botaoAbrirNovaTarefa')
 const editarTarefa = document.getElementById('editarTarefa')
-// const sair = document. getElementById (sairButton)
 const filtroButton = document.getElementById('filtroButton')
 const fecharNovaTarefa = document.getElementById('botaoFecharNovaTarefa')
 const fecharedicao = document.getElementById('botaoFecharEdicao')
@@ -32,15 +32,7 @@ async function cadastroTarefa(){
     const titulo = document.getElementById('tituloNovaTarefa').value
     const descricao = document.getElementById('descricaoDaTarefa').value
     const data = document.querySelector('#dataTarefa').value
-    const inputs = document.querySelectorAll('#categoriaTarefa input[type="radio"]')
 
-    let categoria = '';
-    for (var i = 0; i < inputs.length; i++) {
-        if (inputs[i].checked) {
-            categoria = inputs[i].value;
-            break;
-        }
-    }
 
     let [ano] = data.split("-");
 
@@ -52,7 +44,6 @@ async function cadastroTarefa(){
                 titulo: titulo,
                 descricao: descricao,
                 data: data,
-                categoria: categoria,
                 idUsuario: idPerfil
             }
 
@@ -71,3 +62,13 @@ async function cadastroTarefa(){
     }
 }
 
+fecharNovaTarefa.addEventListener('click',   fecharPainelNovaTarefa)
+function fecharPainelNovaTarefa() {
+    novaTarefa.style.visibility = "hidden"
+}
+
+
+botaoAbrirNovaTarefa.addEventListener('click', () => {
+    const novaTarefa = document.getElementById('novaTarefa');
+    novaTarefa.style.visibility = "visible";
+})
