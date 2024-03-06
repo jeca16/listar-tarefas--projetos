@@ -32,7 +32,16 @@
                 </div>
             </a>
         </div>
-        
+
+        <!-- <div class="inicio">
+            <a href="./premium.html" target="_blank">
+                <div class="premium">
+                    <img src="../img/premium ativado.png" alt="">
+                    <h6>premium</h6>
+                </div>
+            </a>
+        </div> -->
+
         <!-- <div class="upgrade">
             <a href="./premium.html" target="_blank">
                 <img src="../img/premium desativado.png" alt="">
@@ -46,16 +55,18 @@
     </header>
 
     <main>
-        <button class="botaoAbrir" id="botaoAbrirNovaTarefa" type="button">
-            <img src="../img/image 11.png">
-            Nova Tarefa
-        </button>
-        <div class="novaTarefa" style="visibility: hidden"  id="novaTarefa">
+        <div class="newTask">
+            <button class="botaoAbrir" id="botaoAbrirNovaTarefa" type="button">
+                <img src="../img/image 11.png">
+                Nova Tarefa
+            </button>
+        </div>
+        <div class="novaTarefa" style="visibility: hidden" id="novaTarefa">
             <img src="../img/fechar.png" class="botaoFechar" id="botaoFecharNovaTarefa">
             <input type="text" placeholder="Título da Tarefa" id="tituloNovaTarefa">
             <textarea placeholder="Descrição da Tarefa" id="descricaoDaTarefa" class="descricao"></textarea>
             <input type="date" id="dataTarefa">
-            
+
             <button onclick="cadastroTarefa()" class="botaoCriar"> Criar </button>
         </div>
 
@@ -72,7 +83,6 @@
         <div class="tarefas">
             <h3>suas tarefas: </h3>
             <div class="listarTarefas">
-                <img src="../img/filtro.png" id="filtroButton">
                 <div class="tatefa" id="tarefa"></div>
                 <div id="menssage"> Sua Tarefa Expirou !!!!</div>
             </div>
