@@ -3,7 +3,6 @@ body{
     flex-direction: column;
     font-family: 'Inspiration', cursive;
     height: 100vh;
-  
     background: rgb(190,242,249);
     background: linear-gradient(180deg, rgba(190,242,249,1) 0%, rgba(6,113,159,1) 100%);
     /* overflow-y: hidden; */
@@ -12,7 +11,7 @@ body{
 
 /* header inicio */
 header{
-  padding: 32px 24px;
+  padding: 30px 24px;
 }
 
 .inicio{
@@ -61,17 +60,20 @@ header{
 main{
     display: flex;
     align-items: center;
-    gap: 305px;
+    gap: 600px;
+    height: 60vh;
 }
 
 .newTask{
-    
-}
+    display: flex;
+    margin-top: 500px;
+} 
 .novaTarefa, .editarTarefa{
     width: 50vw;
     height: 70vh;
+    margin-left: 25%;
     background-color: rgba(44, 43, 43, 0.7);
-    position: absolute;
+    position:fixed;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -150,15 +152,13 @@ textarea{
 .listarTarefas img{
     height: 60px;
 }
-#filtroButton{
-    cursor: pointer;
-}
+
 
 
 .tarefasConcluidas{
     width: 70px;
     display: flex;
-    margin-top: 440px;
+    margin-top: 500px;
 }
 
 

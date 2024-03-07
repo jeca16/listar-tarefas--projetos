@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/home.css">
     <script src="../js/home.js" defer></script>
+    <link rel="icon" href="../img/task.png">
     <title>Listar Tarefas</title>
 
 </head>
@@ -70,21 +71,29 @@
             <button onclick="cadastroTarefa()" class="botaoCriar"> Criar </button>
         </div>
 
+        <div class="edit">
+            <button class="botaoAbrir" id="botaoAbrirEdicao" type="button">
+                <img src="../img/edit.png">
+            </button>
+        </div>
+
         <div class="editarTarefa" style="visibility: hidden;" id="editarTarefa">
             <img src="../img/fechar.png" class="botaoFechar" id="botaoFecharEdicao">
-            <input type="text" placeholder="Título da Tarefa" id="tituloNovaTarefa">
-            <textarea placeholder="Descrição da Tarefa" id="descricaoDaTarefa" class="descricao"></textarea>
-            <input type="date" id="dataTarefa">
+            <input type="text" placeholder="Título da Tarefa" id="tituloEditTarefa">
+            <textarea placeholder="Descrição da Tarefa" id="descricaoEditDaTarefa" class="descricao"></textarea>
+            <input type="date" id="dataEditTarefa">
 
-            <button id="finalizar"> editar </button>
+            <button class="botaoCriar" id="finalizar"> editar </button>
         </div>
 
 
         <div class="tarefas">
             <h3>suas tarefas: </h3>
             <div class="listarTarefas">
-                <div class="tatefa" id="tarefa"></div>
-                <div id="menssage"> Sua Tarefa Expirou !!!!</div>
+                <div class="tasks">
+                    <div class="tatefa" id="tarefa"></div>
+                </div>
+                <div id="avisoExpiracao"> A data desta tarefa já expirou !!!</div>
             </div>
         </div>
 

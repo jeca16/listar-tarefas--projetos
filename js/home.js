@@ -9,22 +9,13 @@ if (!idPerfil) {
 const novaTarefa = document.getElementById('novaTarefa')
 const botaoAbrirNovaTarefa = document.getElementById('botaoAbrirNovaTarefa')
 const editarTarefa = document.getElementById('editarTarefa')
-const filtroButton = document.getElementById('filtroButton')
+const botaoAbrirEdicao = document.getElementById('botaoAbrirEdicao')
 const fecharNovaTarefa = document.getElementById('botaoFecharNovaTarefa')
 const fecharedicao = document.getElementById('botaoFecharEdicao')
 const message = document.getElementById('menssage')
 const listarTarefas = document. getElementById('tarefa')
 
 
-filtroButton.addEventListener('click',filtrar) 
-function filtrar(){
-    filtro++
-    if(filtro==5){
-        filtro=0
-    }
-    atualizarPagina()
-    console.log(filtro)
-}
 
 
 async function cadastroTarefa(){
@@ -62,13 +53,46 @@ async function cadastroTarefa(){
     }
 }
 
+async function edicao (idTarefa){
+    const titulo = document.getElementById('tituloEditTarefa')
+    const descricao = document.getElementById('descricaoEditDaTarefa')
+    const data = document.getElementById('dataEditTarefa')
+
+    const tarefas = await validarTarefas()
+    for(let cont = 0;cont<tarefas.length;cont++){
+        if(idTarefa===tarefas[cont].id){
+            titulo.value = tarefas[cont].titulo
+            descricao.value = tarefas[cont].descricao
+            let dataAtual = tarefas[cont].data
+            data.value = dataAtual
+            console.log(dataAtual)
+        }
+    }
+
+    editarTarefa.style.visibility = 'visible'
+
+    const editButton = document.getElementById('finalizar')
+    editButton.addEventListener('click', () => editarTarefa(idTarefa))
+
+}
+
 fecharNovaTarefa.addEventListener('click',   fecharPainelNovaTarefa)
 function fecharPainelNovaTarefa() {
     novaTarefa.style.visibility = "hidden"
+}
+
+fecharedicao.addEventListener('click',   fecharPainelEdicao)
+function fecharPainelEdicao() {
+    editarTarefa.style.visibility = "hidden"
 }
 
 
 botaoAbrirNovaTarefa.addEventListener('click', () => {
     const novaTarefa = document.getElementById('novaTarefa');
     novaTarefa.style.visibility = "visible";
+})
+
+botaoAbrirEdicao.addEventListener('click', () => {
+    const editarTarefa = document.getElementById('editarTarefa');
+    editarTarefa.style.visibility = "visible";
 })
